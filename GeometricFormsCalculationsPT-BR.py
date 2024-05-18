@@ -17,7 +17,7 @@
 #           - Para o Quadrado > Área e perímetro
 # Autor: Higor Stanley aka Devyat009
 import math;
-
+# Função
 def e_numero(string):
     try:
         if string.isnumeric():
@@ -28,7 +28,7 @@ def e_numero(string):
             return True
     except ValueError:
         return False
-    
+# Programa em estado de loop    
 while True:
         resultado = 0
         decisao = (input('''Insira as opções:
@@ -38,7 +38,9 @@ while True:
                         [4] Quadrado
                         [5] Sair
                         Opção a ser escolhida: '''))
+    # Valida se o input do usuario e um número valido
         if e_numero(decisao):
+            # Escolha 1: Circulo
             if decisao == '1':
                 while True:
                     raio = input('Insira o raio do circulo: ')
@@ -53,7 +55,8 @@ while True:
                             Diametro: {diametro}''')
                         break
                     else:
-                        print('\nInsira um número válido para o raio!\n')     
+                        print('\nInsira um número válido para o raio!\n')    
+            # Escolha 2: Retângulo
             elif decisao == '2':
                 while True:
                     altura = input('Insira a altura do retângulo: ')
@@ -74,6 +77,8 @@ while True:
                         break    
                     else:
                         print('\nInsira um número válido para a altura!\n')
+            # Escolha 3: Triângulo
+            # Multiplos 'while' para cada valor inserido para que haja uma validação de cada input do usuario
             elif decisao == '3':
                 while True:
                     altura = input('Insira a altura do triângulo: ')
@@ -101,6 +106,7 @@ while True:
                         break
                     else:
                         print('\nInsira um número válido para a altura!\n')
+            # Escolha 4: Quadrado
             elif decisao == '4':
                 while True:
                     lado = input('Insira o lado do quadrado: ')
@@ -113,11 +119,13 @@ while True:
                         break
                     else:
                         print('\nInsira um número válido para o lado!\n')
+            # Escolha 5: Sair do programa
             elif decisao == '5':
                 print('Saindo...')
                 break
             # Opção fora do escopo  
             else:
                 print('\nOpção INVALIDA detectada\n')
+        # Caso o input do usuario não seja um número alertar:
         else: 
-            print('\nInsira um numero entre 1 e 4 e tente novamente!!\n')
+            print('\nInsira um numero entre 1 e 5 e tente novamente!!\n')
