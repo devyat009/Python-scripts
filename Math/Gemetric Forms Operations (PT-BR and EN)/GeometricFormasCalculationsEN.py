@@ -1,4 +1,5 @@
 # Date: 05/19/2024
+# Author: Higor Stanley aka Devyat009
 # Activity: Create an program with the specifications:
 #   1 - The user can select one of the options:
 #           - Circle
@@ -15,7 +16,6 @@
 #           - For Retangle > Area and perimeter
 #           - For Triangle > Area and perimeter
 #           - For Square > Area and perimeter
-# Author: Higor Stanley aka Devyat009
 
 import math;
 # Function.
