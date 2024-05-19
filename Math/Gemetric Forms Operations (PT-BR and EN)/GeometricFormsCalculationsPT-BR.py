@@ -1,4 +1,5 @@
 # Data: 17/05/2024
+# Autor: Higor Stanley aka Devyat009
 # Atividade: Faça um programa com as especificações:
 #   1 - O Usuario deverá escolher entre os objetos a seguir
 #           - Circulo
@@ -15,7 +16,7 @@
 #           - Para o Retângulo > Área e perímetro
 #           - Para o Triângulo > Área e perímetro
 #           - Para o Quadrado > Área e perímetro
-# Autor: Higor Stanley aka Devyat009
+
 
 import math;
 # Função.
