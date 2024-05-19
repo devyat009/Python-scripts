@@ -1,4 +1,4 @@
-# Data: 17/04/2024
+# Data: 17/05/2024
 # Atividade: Faça um programa com as especificações:
 #   1 - O Usuario deverá escolher entre os objetos a seguir
 #           - Circulo
@@ -16,8 +16,9 @@
 #           - Para o Triângulo > Área e perímetro
 #           - Para o Quadrado > Área e perímetro
 # Autor: Higor Stanley aka Devyat009
+
 import math;
-# Função
+# Função.
 def e_numero(string):
     try:
         if string.isnumeric():
@@ -28,10 +29,9 @@ def e_numero(string):
             return True
     except ValueError:
         return False
-# Programa em estado de loop    
+# Programa em estado de loop.
 while True:
-        resultado = 0
-        decisao = (input('''Insira as opções:
+        decisao = (input('''Escolha uma dessas opções:
                         [1] Circulo
                         [2] Retângulo
                         [3] Triângulo
